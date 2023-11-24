@@ -39,7 +39,6 @@ clear.onclick = () => {
     }
 }
 
-console.log(lsp, currentColor);
 hidden.style.display = 'block';
 colorPicker.value = currentColor;
 lsp.data.length
