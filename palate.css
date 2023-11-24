@@ -1,0 +1,49 @@
+* {
+    transition: all, .5s;
+}
+
+.nav{
+    background-color: steelblue;
+}
+
+body {
+    background-color: #d3d3d3;
+}
+
+#hidden {
+    display: none;
+}
+
+button{
+    border-radius: 3px;
+    border-width: 3px;
+}
+
+#scratchcontainer {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background-color: #efefef;
+    color: #00000000;
+    box-shadow: 0px 0px 10px #0e0e0e50;
+    line-height: 2px;
+    letter-spacing: 0px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.pixel {
+    position: relative;
+    padding: 5px;
+    margin-right: -5px;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+.containerpro {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
