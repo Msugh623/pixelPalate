@@ -6,13 +6,14 @@
     <meta name="color-scheme" content="dark">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/sb-admin-2.min.css">
+    <script defer src="lasp.js"></script>
     <script defer src="palate.js"></script>
     <link rel="stylesheet" href="palate.css">
     <title>Pixel palate</title>
 </head>
 
 <body>
-    <nav class="nav navbar">
+    <nav class="nav navbar sticky-top" id="nav">
         <h4 class="navbar-header">
             Pixel palate
         </h4>
@@ -20,13 +21,17 @@
             <li title="Current color - click to change" class="mr-3 my-auto">
                 <input type="color" id="colorPicker">
             </li>
-            <li  id="clear">
-                <button class=" btn-danger">Clear</button>
+            <li id="clear">
+                <button class="btn-danger">Clear</button>
+            </li>
+            <li id="save" >
+                <button class="btn-primary" style="margin-left: 10px;">Save</button>
             </li>
         </div>
     </nav>
-    <div class="containerpro mt-5" >
-        <div id="scratchcontainer">
+
+    <div class="containerpro mt-5">
+        <div id="whiteBoard">
         </div>
         <div id="hidden">
             <h1>Color palate pro, Draw your dreams into reality</h1>
