@@ -20,8 +20,7 @@ button {
     border-width: 3px;
 }
 
-#whiteBoard {
-    position: absolute;
+#whiteBoard { 
     height: 500px;
     width: 500px;
     background-color: #fff;
@@ -47,4 +46,42 @@ button {
     width: 500px;
     margin: auto;
     overflow: hidden;
+}
+
+#containment{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 5px;
+}
+
+#whiteBoard{
+    scale: 1;
+}
+
+@media (max-width:600px) {
+    #whiteBoard{
+        scale: .8;
+    }    
+}
+
+
+@media (max-width:500px) {
+    #whiteBoard{
+        scale: .7;
+    }    
+}
+
+
+@media (max-width:400px) {
+    #whiteBoard{
+        scale: .6;
+    }    
+}
+
+
+@media (max-width:300px) {
+    #whiteBoard{
+        scale: .5;
+    }    
 }
