@@ -29,6 +29,7 @@ for (let i = 0; i < pixels.length; i++) {
     pixels[i].ontouchstart = (e) => {
         e.target.style.backgroundColor = currentColor;
     }
+
     pixels[i].ontouchmove = (e) => {
         e.target.style.backgroundColor = currentColor;
     }
@@ -39,11 +40,15 @@ for (let i = 0; i < pixels.length; i++) {
 
     pixels[i].ondragover = (e) => {
         e.target.style.backgroundColor = currentColor;
+        console.log('aa')
     }
     pixels[i].onclick = (e) => {
         e.target.style.backgroundColor = currentColor;
     }
-}
+    pixels[i].ondraw = (e) => {
+        e.target.style.backgroundColor = currentColor;
+    }
+}  
 
 colorPicker.onchange = (e) => {
     const { value } = e.target;
@@ -78,8 +83,24 @@ lsp?.data?.length
     && localStorage.setItem('pixeldata', JSON.stringify({ data: [...pixels] }));
 
 save.onclick = () => {
-    print()
-    
+    try {
+        html2canvas(container).then(
+            function (canvas) {
+                // Create a link element
+                var link = document.createElement("a");
+
+                // Set the download attribute with the desired file name
+                link.download = "screenshot.png";
+
+                // Convert the canvas to a data URL and set it as the href of the link
+                link.href = canvas.toDataURL("image/png");
+
+                // Simulate a click on the link to trigger the download
+                link.click();
+            });
+    } catch (err) {
+        alert('ERROR' + err)
+    } 
 }
 
 onbeforeprint = () => {
