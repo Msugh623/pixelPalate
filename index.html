@@ -1,47 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="color-scheme" content="dark">
-<meta name="google-site-verification" content="sLzlzUBLNcb1eDx2jn1UEWCGFBXnP1746Koea-20Sjs" />
-<meta name="description" content="A pixelated drawing canvas">
-    <meta name="viewport" content="width=920, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/sb-admin-2.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="google-site-verification"
+      content="sLzlzUBLNcb1eDx2jn1UEWCGFBXnP1746Koea-20Sjs"
+    />
+    <meta name="description" content="A pixelated drawing canvas" />
+    <meta name="viewport" content="width=920, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/sb-admin-2.min.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"
+    ></script>
     <script defer src="lasp.js"></script>
     <script defer src="palate.js"></script>
-    <link rel="stylesheet" href="palate.css">
-<link rel="icon" href="https://res.cloudinary.com/dqbgai7xd/image/upload/v1725190198/btf_x7ebu6.jpg">
+    <link rel="stylesheet" href="palate.css" />
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
     <title>Sprint Canvas - Your simple pixelated drawing book</title>
-</head>
+  </head>
 
-<body>
-    <nav class="nav navbar sticky-top"  id="nav">
-        <h4 class="navbar-header">
-            Sprint Canvas
-        </h4>
-        <div class="navbar-body d-flex">
-            <li title="Current color - click to change" class="mr-3 my-auto">
-                <input type="color" id="colorPicker">
-            </li>
-            <li id="clear">
-                <button class="btn-danger">Clear</button>
-            </li>
-            <li id="save" >
-                <button class="btn-primary" style="margin-left: 10px;">Save</button>
-            </li>
-        </div>
+  <body>
+    <nav class="nav navbar sticky-top" id="nav">
+      <h4 class="navbar-header">Sprint Canvas</h4>
+      <div class="navbar-body d-flex">
+        <li title="Current color - click to change" class="mr-3 my-auto">
+          <input type="color" id="colorPicker" />
+        </li>
+        <li id="clear">
+          <button class="btn-danger">Clear</button>
+        </li>
+        <li id="save">
+          <button class="btn-primary" style="margin-left: 10px">Save</button>
+        </li>
+      </div>
     </nav>
 
-   <div id="containment">
-    <div class="containerpro mt-0 mt-md-4 mt-lg-5">
-        <div id="whiteBoard">
-        </div>
-        <div id="hidden">
-        </div>
+    <div id="containment">
+      <div class="containerpro mt-0 mt-md-4 mt-lg-5">
+        <div id="whiteBoard"></div>
+        <div id="hidden"></div>
+      </div>
     </div>
-   </div>
-</body>
-
+  </body>
 </html>
